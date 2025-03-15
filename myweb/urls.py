@@ -18,6 +18,9 @@ from django.contrib import admin
 from myweb.views import home, about
 from django.urls import path
 
+from django.conf import settings
+from django.conf.urls.static import static
+
 ############### UNTUK MEDIA ##################
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls.static import static
