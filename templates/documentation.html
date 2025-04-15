@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- color of address bar in mobile browser -->
+    <meta name="theme-color" content="#28292C">
+    <!-- favicon  -->
+    <title>Pixy documentation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #E56734;
+            color: #FDFDFF;
+        }
+
+        header {
+            padding: 90px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 72px;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 36px;
+            text-align: center;
+        }
+
+        a {
+            color: #FDFDFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #FDFDFF;
+            text-decoration: underline;
+        }
+
+        pre {
+            overflow-x: auto;
+            padding: 60px;
+            background-color: #1A2430;
+            color: #FDFDFF;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Pixy documentation</h1>
+            <h3>Thank you for purchasing!</h3>
+        </header>
+        <section class="marcup">
+            <h2>App HTML marcup</h2>
+            <br>
+            <br>
+
+            <pre style="margin: 0; line-height: 125%"><span style="color: #cd2828; font-weight: bold">&lt;!DOCTYPE html&gt;</span>
+<span style="color: #6ab825; font-weight: bold">&lt;html</span> <span style="color: #bbbbbb">lang=</span><span style="color: #ed9d13">&quot;zxx&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+<span style="color: #6ab825; font-weight: bold">&lt;head&gt;</span>
+    ...
+<span style="color: #6ab825; font-weight: bold">&lt;/head&gt;</span>
+
+<span style="color: #6ab825; font-weight: bold">&lt;body&gt;</span>
+
+    <span style="color: #999999; font-style: italic">&lt;!-- wrapper --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">id=</span><span style="color: #ed9d13">&quot;smooth-wrapper&quot;</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mil-page-wrapper&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+        <span style="color: #999999; font-style: italic">&lt;!-- cursor --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mil-cursor-follower&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/div&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- cursor end --&gt;</span>
+
+        <span style="color: #999999; font-style: italic">&lt;!-- preloader --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mil-preloader&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            ...
+        <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- preloader end --&gt;</span>
+
+        <span style="color: #999999; font-style: italic">&lt;!-- scroll progress --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mil-progress-track&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            ...
+        <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- scroll progress end --&gt;</span>
+
+        <span style="color: #999999; font-style: italic">&lt;!-- fixed elements --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mil-fixed&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mil-top-panel&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                ...
+            <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+
+            <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mil-menu-frame&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                ...
+            <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- fixed elements end --&gt;</span>
+
+        <span style="color: #999999; font-style: italic">&lt;!-- page transition --&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mil-transition-fade&quot;</span> <span style="color: #bbbbbb">id=</span><span style="color: #ed9d13">&quot;swup&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+            <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mil-transition-frame&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+                <span style="color: #999999; font-style: italic">&lt;!-- content --&gt;</span>
+                <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">id=</span><span style="color: #ed9d13">&quot;smooth-content&quot;</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mil-content&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+                    <span style="color: #999999; font-style: italic">&lt;!-- hero --&gt;</span>
+                    <span style="color: #6ab825; font-weight: bold">&lt;div&gt;</span>
+                        ...
+                    <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+                    <span style="color: #999999; font-style: italic">&lt;!-- hero end --&gt;</span>
+                    ...
+                    <span style="color: #999999; font-style: italic">&lt;!-- footer --&gt;</span>
+                    <span style="color: #6ab825; font-weight: bold">&lt;footer</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mil-footer mil-p-160-160&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+                        ...
+                    <span style="color: #6ab825; font-weight: bold">&lt;/footer&gt;</span>
+                    <span style="color: #999999; font-style: italic">&lt;!-- footer end --&gt;</span>
+
+                <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+                <span style="color: #999999; font-style: italic">&lt;!-- content --&gt;</span>
+
+            <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #999999; font-style: italic">&lt;!-- page transition --&gt;</span>
+
+    <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- wrapper end --&gt;</span>
+
+    ...
+
+<span style="color: #6ab825; font-weight: bold">&lt;/body&gt;</span>
+
+<span style="color: #6ab825; font-weight: bold">&lt;/html&gt;</span>
+</pre>
+
+
+
+
+            <br>
+            <br>
+
+        </section>
+        <section class="css-assets">
+            <br>
+            <br>
+            <h2>CSS assets</h2>
+            <p>Plugins</p>
+            <ul>
+                <li><a target="_blank" href="https://getbootstrap.com">Bootstrap grid</a></li>
+                <li><a target="_blank" href="https://fontawesome.com/v5/search">Font awesome</a></li>
+                <li><a target="_blank" href="https://swiperjs.com/swiper-api">Swiper</a></li>
+            </ul>
+            <br>
+            <p>Pixy scss</p>
+            <ul>
+
+                <li>_variables-friendly.scss</li>
+                <li>_variables-stylish.scss</li>
+                <li>_common.scss</li>
+                <li>_hero.scss</li>
+                <li>_components.scss</li>
+                <br>
+                <li>style-friendly.scss <i>(compiled in style-friendly.css)</i></li>
+                <li>style-stylish.scss <i>(compiled in style-stylish.css)</i></li>
+
+            </ul>
+            <br>
+            <p>Pixy css</p>
+            <ul>
+                <li>style-friendly.css</li>
+                <li>style-stylish.css</li>
+            </ul>
+            <br>
+            <br>
+
+            <pre style="margin: 0; line-height: 125%"><span style="color: #cd2828; font-weight: bold">&lt;!DOCTYPE html&gt;</span>
+<span style="color: #6ab825; font-weight: bold">&lt;html</span> <span style="color: #bbbbbb">lang=</span><span style="color: #ed9d13">&quot;zxx&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+<span style="color: #6ab825; font-weight: bold">&lt;head&gt;</span>
+
+    ...
+
+    <span style="color: #999999; font-style: italic">&lt;!-- grid css --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;link</span> <span style="color: #bbbbbb">rel=</span><span style="color: #ed9d13">&quot;stylesheet&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;css/plugins/bootstrap-grid.css&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- font awesome css --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;link</span> <span style="color: #bbbbbb">rel=</span><span style="color: #ed9d13">&quot;stylesheet&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;css/plugins/fontawesome.min.css&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- swiper css --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;link</span> <span style="color: #bbbbbb">rel=</span><span style="color: #ed9d13">&quot;stylesheet&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;css/plugins/swiper.min.css&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- okai css --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;link</span> <span style="color: #bbbbbb">rel=</span><span style="color: #ed9d13">&quot;stylesheet&quot;</span> <span style="color: #bbbbbb">href=</span><span style="color: #ed9d13">&quot;css/style-friendly.css&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- page title --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;title&gt;</span>Pixy<span style="color: #6ab825; font-weight: bold">&lt;/title&gt;</span>
+
+<span style="color: #6ab825; font-weight: bold">&lt;/head&gt;</span>
+
+<span style="color: #6ab825; font-weight: bold">&lt;body&gt;</span>
+
+    ...
+
+<span style="color: #6ab825; font-weight: bold">&lt;/body&gt;</span>
+
+<span style="color: #6ab825; font-weight: bold">&lt;/html&gt;</span>
+</pre>
+
+
+
+
+        </section>
+        <section class="js assets">
+            <br>
+            <br>
+            <h2>Js assets</h2>
+            <p>Plugins</p>
+            <ul>
+
+                <li><a target="_blank" href="https://swup.js.org/">Swup</a></li>
+                <li><a target="_blank" href="https://gsap.com/">GSAP</a></li>
+                <li><a target="_blank" href="https://gsap.com/docs/v3/Plugins/ScrollSmoother/">Smooth scroll</a></li>
+                <li><a target="_blank" href="https://gsap.com/docs/v3/Plugins/ScrollTrigger/?page=1">ScrollTrigger</a></li>
+                <li><a target="_blank" href="https://gsap.com/docs/v3/Plugins/ScrollToPlugin/">ScrollTo</a></li>
+                <li><a target="_blank" href="https://swiperjs.com/swiper-api">Swiper</a></li>
+                <li><a target="_blank" href="https://matthew.wagerfield.com/parallax/">Parallax</a></li>
+
+
+            </ul>
+            <br>
+            <p>Pixy assets</p>
+            <ul>
+                <li>main.js</li>
+            </ul>
+            <br>
+            <br>
+
+            <pre style="margin: 0; line-height: 125%"><span style="color: #cd2828; font-weight: bold">&lt;!DOCTYPE html&gt;</span>
+<span style="color: #6ab825; font-weight: bold">&lt;html</span> <span style="color: #bbbbbb">lang=</span><span style="color: #ed9d13">&quot;zxx&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+
+<span style="color: #6ab825; font-weight: bold">&lt;head&gt;</span>
+
+    ...
+
+<span style="color: #6ab825; font-weight: bold">&lt;/head&gt;</span>
+
+<span style="color: #6ab825; font-weight: bold">&lt;body&gt;</span>
+
+    <span style="color: #999999; font-style: italic">&lt;!-- wrapper --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;div</span> <span style="color: #bbbbbb">id=</span><span style="color: #ed9d13">&quot;smooth-wrapper&quot;</span> <span style="color: #bbbbbb">class=</span><span style="color: #ed9d13">&quot;mil-page-wrapper&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;</span>
+        ...
+    <span style="color: #6ab825; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- wrapper end --&gt;</span>
+
+    <span style="color: #999999; font-style: italic">&lt;!-- swup js --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/swup.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- gsap js --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/gsap.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- scroll smoother --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/ScrollSmoother.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- scroll trigger js --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/ScrollTrigger.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- scroll to js --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/ScrollTo.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- swiper js --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/swiper.min.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+    <span style="color: #999999; font-style: italic">&lt;!-- parallax js --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/plugins/parallax.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+
+    <span style="color: #999999; font-style: italic">&lt;!-- pixy js --&gt;</span>
+    <span style="color: #6ab825; font-weight: bold">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">&quot;js/main.js&quot;</span><span style="color: #6ab825; font-weight: bold">&gt;&lt;/script&gt;</span>
+
+<span style="color: #6ab825; font-weight: bold">&lt;/body&gt;</span>
+
+<span style="color: #6ab825; font-weight: bold">&lt;/html&gt;</span>
+</pre>
+
+
+
+        </section>
+        <section class="fonts">
+            <br>
+            <br>
+            <h2>Fonts</h2>
+            <ul>
+                <li><a target="_blank" href="https://fonts.google.com/specimen/Anton">Anton</a></li>
+                <li><a target="_blank" href="https://fonts.google.com/specimen/Outfit">Outfit</a></li>
+            </ul>
+            <br>
+            <h2>Icons</h2>
+            <ul>
+                <li><a target="_blank" href="https://fontawesome.com/v5/search">Font awesome</a></li>
+            </ul>
+
+        </section>
+        <br>
+        <br>
+    </div>
+</body>
+
+</html>
