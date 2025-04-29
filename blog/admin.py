@@ -1,5 +1,5 @@
 from django.contrib import admin
-from berita.models import Kategori, Artikel
+from blog.models import Kategori, MyBlog
 
 # Register your models here.
 
@@ -8,4 +8,4 @@ admin.site.register(Kategori)
 class ArtikelAdmin(admin.ModelAdmin):
     list_display = ['judul','kategori','author']
     search_fields = ['judul']
-admin.site.register(Artikel,ArtikelAdmin)
+admin.site.register(MyBlog,ArtikelAdmin)

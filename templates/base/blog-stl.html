@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -8,13 +9,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- grid css -->
-    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
+    <link rel="stylesheet" href="{% static 'frontend/css/plugins/bootstrap-grid.css' %}">
     <!-- font awesome css -->
-    <link rel="stylesheet" href="css/plugins/fontawesome.min.css">
+    <link rel="stylesheet" href="{% static 'frontend/css/plugins/fontawesome.min.css' %}">
     <!-- swiper css -->
-    <link rel="stylesheet" href="css/plugins/swiper.min.css">
+    <link rel="stylesheet" href="{% static 'frontend/css/plugins/swiper.min.css' %}">
     <!-- okai css -->
-    <link rel="stylesheet" href="css/style-stylish.css">
+    <link rel="stylesheet" href="{% static 'frontend/css/style-stylish.css' %}">
     <!-- page title -->
     <title>Pixy</title>
 
@@ -87,38 +88,38 @@
                                     <div class="mil-menu-part mil-inner-scroll" id="swupMenu">
                                         <ul class="mil-main-menu mil-c-gone">
                                             <li class="mil-has-children">
-                                                <a href="#.">Template style</a>
+                                                <a href="#">Template style</a>
                                                 <ul>
-                                                    <li><a href="home-1.html" target="_blank" data-no-swup>Friendly</a></li>
-                                                    <li class="mil-current"><a href="home-4.html" target="_blank" data-no-swup>Stylish</a></li>
+                                                    <li><a href="../home/home-1.html" target="_blank" data-no-swup>Friendly</a></li>
+                                                    <li class="mil-current"><a href="../home/home-4.html" target="_blank" data-no-swup>Stylish</a></li>
                                                 </ul>
                                             </li>
                                             <li class="mil-has-children">
-                                                <a href="#.">Home type</a>
+                                                <a href="#">Home type</a>
                                                 <ul>
-                                                    <li><a href="home-4.html">Corporate</a></li>
-                                                    <li><a href="home-5.html">Agency</a></li>
-                                                    <li><a href="home-6.html">Personal</a></li>
+                                                    <li><a href="../home/home-4.html">Corporate</a></li>
+                                                    <li><a href="../home/home-5.html">Agency</a></li>
+                                                    <li><a href="../home/home-6.html">Personal</a></li>
                                                 </ul>
                                             </li>
                                             <li class="mil-has-children">
-                                                <a href="#.">Portfolio</a>
+                                                <a href="#">Portfolio</a>
                                                 <ul>
-                                                    <li><a href="portfolio-1-stl.html">Grid type 1</a></li>
-                                                    <li><a href="portfolio-2-stl.html">Grid type 2</a></li>
-                                                    <li><a href="portfolio-3-stl.html">Grid type 3</a></li>
+                                                    <li><a href="../home/portfolio-1-stl.html">Grid type 1</a></li>
+                                                    <li><a href="../home/portfolio-2-stl.html">Grid type 2</a></li>
+                                                    <li><a href="../home/portfolio-3-stl.html">Grid type 3</a></li>
                                                 </ul>
                                             </li>
                                             <li class="mil-has-children">
-                                                <a href="#.">Pages</a>
+                                                <a href="#">Pages</a>
                                                 <ul>
-                                                    <li><a href="team-stl.html">Team</a></li>
+                                                    <li><a href="../home/team-stl.html">Team</a></li>
                                                     <li><a href="contact-stl.html">Contact</a></li>
-                                                    <li><a href="services-stl.html">Services</a></li>
-                                                    <li><a href="service-stl.html">Service single</a></li>
+                                                    <li><a href="../home/services-stl.html">Services</a></li>
+                                                    <li><a href="../home/service-stl.html">Service single</a></li>
                                                     <li class="mil-current"><a href="blog-stl.html">Blog</a></li>
-                                                    <li><a href="publication-stl.html">Publication</a></li>
-                                                    <li><a href="404-stl.html">404</a></li>
+                                                    <li><a href="../home/publication-stl.html">Publication</a></li>
+                                                    <li><a href="../home/404-stl.html">404</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -132,10 +133,10 @@
                                 <div class="mil-right-side">
                                     <div class="mil-links-part">
                                         <ul class="mil-links">
-                                            <li><a href="#.">Privacy policy</a></li>
-                                            <li><a href="#.">Therms and conditions</a></li>
-                                            <li><a href="#.">Site map</a></li>
-                                            <li><a href="#.">Careers</a></li>
+                                            <li><a href="#">Privacy policy</a></li>
+                                            <li><a href="#">Therms and conditions</a></li>
+                                            <li><a href="#">Site map</a></li>
+                                            <li><a href="#">Careers</a></li>
                                         </ul>
                                     </div>
                                     <div class="mil-blog-part">
@@ -150,10 +151,10 @@
                                             <div class="swiper-container mil-blog-slider-sm">
                                                 <div class="swiper-wrapper">
                                                     <div class="swiper-slide">
-                                                        <a href="publication-stl.html" class="mil-blog-card-sm mil-c-gone">
+                                                        <a href="../home/publication-stl.html" class="mil-blog-card-sm mil-c-gone">
                                                             <div class="mil-cover">
                                                                 <div class="mil-hover-frame">
-                                                                    <img src="img/blog/9.jpg" alt="cover">
+                                                                    <img src="{% static 'frontend/img/blog/9.jpg' %}" alt="cover">
                                                                 </div>
                                                             </div>
                                                             <div class="mil-text-frame">
@@ -162,10 +163,10 @@
                                                         </a>
                                                     </div>
                                                     <div class="swiper-slide">
-                                                        <a href="publication-stl.html" class="mil-blog-card-sm mil-c-gone">
+                                                        <a href="../home/publication-stl.html" class="mil-blog-card-sm mil-c-gone">
                                                             <div class="mil-cover">
                                                                 <div class="mil-hover-frame">
-                                                                    <img src="img/blog/10.jpg" alt="cover">
+                                                                    <img src="{% static 'frontend/img/blog/10.jpg' %}" alt="cover">
                                                                 </div>
                                                             </div>
                                                             <div class="mil-text-frame">
@@ -174,10 +175,10 @@
                                                         </a>
                                                     </div>
                                                     <div class="swiper-slide">
-                                                        <a href="publication-stl.html" class="mil-blog-card-sm mil-c-gone">
+                                                        <a href="../home/publication-stl.html" class="mil-blog-card-sm mil-c-gone">
                                                             <div class="mil-cover">
                                                                 <div class="mil-hover-frame">
-                                                                    <img src="img/blog/11.jpg" alt="cover">
+                                                                    <img src="{% static 'frontend/img/blog/11.jpg' %}" alt="cover">
                                                                 </div>
                                                             </div>
                                                             <div class="mil-text-frame">
@@ -186,10 +187,10 @@
                                                         </a>
                                                     </div>
                                                     <div class="swiper-slide">
-                                                        <a href="publication-stl.html" class="mil-blog-card-sm mil-c-gone">
+                                                        <a href="../home/publication-stl.html" class="mil-blog-card-sm mil-c-gone">
                                                             <div class="mil-cover">
                                                                 <div class="mil-hover-frame">
-                                                                    <img src="img/blog/12.jpg" alt="cover">
+                                                                    <img src="{% static 'frontend/img/blog/12.jpg' %}" alt="cover">
                                                                 </div>
                                                             </div>
                                                             <div class="mil-text-frame">
@@ -202,11 +203,11 @@
                                         </div>
                                         <div class="mil-menu-social">
                                             <ul class="mil-social mil-c-gone">
-                                                <li><a href="#." target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
-                                                <li><a href="#." target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
-                                                <li><a href="#." target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
-                                                <li><a href="#." target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
-                                                <li><a href="#." target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
+                                                <li><a href="#" target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
+                                                <li><a href="#" target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
+                                                <li><a href="#" target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
+                                                <li><a href="#" target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
+                                                <li><a href="#" target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -234,10 +235,10 @@
                                 <div class="mil-text-pad"></div>
                                 <ul class="mil-breadcrumbs mil-mb60 mil-c-gone">
                                     <li>
-                                        <a href="home-4.html">Home</a>
+                                        <a href="../home/home-4.html">Home</a>
                                     </li>
                                     <li>
-                                        <a href="#.">Blog</a>
+                                        <a href="#">Blog</a>
                                     </li>
                                 </ul>
                                 <h1 class="mil-display2 mil-rubber">Newsletter</h1>
@@ -266,14 +267,14 @@
                                         <div class="mil-blog-card">
                                             <div class="mil-cover mil-up">
                                                 <div class="mil-hover-frame">
-                                                    <img src="img/blog/9.jpg" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
+                                                    <img src="{% static 'frontend/img/blog/9.jpg' %}" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
                                                 </div>
                                                 <div class="mil-badges">
                                                     <div class="mil-category">design</div>
                                                     <div class="mil-date">29.08.24</div>
                                                 </div>
                                             </div>
-                                            <a href="publication-stl.html" class="mil-descr mil-c-gone">
+                                            <a href="../home/publication-stl.html" class="mil-descr mil-c-gone">
                                                 <div class="mil-text-frame">
                                                     <h4 class="mil-head4 mil-max-2row-text mil-mb20 mil-up">How to Become a Graphic Designer in 10 Simple Steps</h4>
                                                     <p class="mil-text-md mil-max-2row-text mil-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.</p>
@@ -291,14 +292,14 @@
                                         <div class="mil-blog-card">
                                             <div class="mil-cover mil-up">
                                                 <div class="mil-hover-frame">
-                                                    <img src="img/blog/10.jpg" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
+                                                    <img src="{% static 'frontend/img/blog/10.jpg' %}" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
                                                 </div>
                                                 <div class="mil-badges">
                                                     <div class="mil-category">Branding</div>
                                                     <div class="mil-date">29.08.24</div>
                                                 </div>
                                             </div>
-                                            <a href="publication-stl.html" class="mil-descr mil-c-gone">
+                                            <a href="../home/publication-stl.html" class="mil-descr mil-c-gone">
                                                 <div class="mil-text-frame">
                                                     <h4 class="mil-head4 mil-max-2row-text mil-mb20 mil-up">10 Essential Tools Every Graphic Designer Should Master</h4>
                                                     <p class="mil-text-md mil-max-2row-text mil-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.</p>
@@ -316,14 +317,14 @@
                                         <div class="mil-blog-card">
                                             <div class="mil-cover mil-up">
                                                 <div class="mil-hover-frame">
-                                                    <img src="img/blog/11.jpg" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
+                                                    <img src="{% static 'frontend/img/blog/11.jpg' %}" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
                                                 </div>
                                                 <div class="mil-badges">
                                                     <div class="mil-category">Art</div>
                                                     <div class="mil-date">29.08.24</div>
                                                 </div>
                                             </div>
-                                            <a href="publication-stl.html" class="mil-descr mil-c-gone">
+                                            <a href="../home/publication-stl.html" class="mil-descr mil-c-gone">
                                                 <div class="mil-text-frame">
                                                     <h4 class="mil-head4 mil-max-2row-text mil-mb20 mil-up">From Concept to Creation: The Design Process Explained</h4>
                                                     <p class="mil-text-md mil-max-2row-text mil-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.</p>
@@ -341,14 +342,14 @@
                                         <div class="mil-blog-card">
                                             <div class="mil-cover mil-up">
                                                 <div class="mil-hover-frame">
-                                                    <img src="img/blog/12.jpg" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
+                                                    <img src="{% static 'frontend/img/blog/12.jpg' %}" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
                                                 </div>
                                                 <div class="mil-badges">
                                                     <div class="mil-category">Interior</div>
                                                     <div class="mil-date">29.08.24</div>
                                                 </div>
                                             </div>
-                                            <a href="publication-stl.html" class="mil-descr mil-c-gone">
+                                            <a href="../home/publication-stl.html" class="mil-descr mil-c-gone">
                                                 <div class="mil-text-frame">
                                                     <h4 class="mil-head4 mil-max-2row-text mil-mb20 mil-up">The Ultimate Guide to UI/UX Design for Beginners</h4>
                                                     <p class="mil-text-md mil-max-2row-text mil-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.</p>
@@ -381,14 +382,14 @@
                                     <div class="mil-blog-card mil-type-2 mil-mb60">
                                         <div class="mil-cover mil-up">
                                             <div class="mil-hover-frame">
-                                                <img src="img/blog/11.jpg" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
+                                                <img src="{% static 'frontend/img/blog/11.jpg' %}" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
                                             </div>
                                             <div class="mil-badges">
                                                 <div class="mil-category">design</div>
                                                 <div class="mil-date">29.08.24</div>
                                             </div>
                                         </div>
-                                        <a href="publication-stl.html" class="mil-descr mil-c-gone">
+                                        <a href="../home/publication-stl.html" class="mil-descr mil-c-gone">
                                             <div class="mil-text-frame">
                                                 <h4 class="mil-head3 mil-max-2row-text mil-mb30 mil-up">How to Become a Graphic Designer in 10 Simple Steps</h4>
                                                 <p class="mil-text-md mil-max-2row-text mil-mb40 mil-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.</p>
@@ -403,14 +404,14 @@
                                     <div class="mil-blog-card mil-type-2 mil-mb60">
                                         <div class="mil-cover mil-up">
                                             <div class="mil-hover-frame">
-                                                <img src="img/blog/13.jpg" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
+                                                <img src="{% static 'frontend/img/blog/13.jpg' %}" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
                                             </div>
                                             <div class="mil-badges">
                                                 <div class="mil-category">design</div>
                                                 <div class="mil-date">29.08.24</div>
                                             </div>
                                         </div>
-                                        <a href="publication-stl.html" class="mil-descr mil-c-gone">
+                                        <a href="../home/publication-stl.html" class="mil-descr mil-c-gone">
                                             <div class="mil-text-frame">
                                                 <h4 class="mil-head3 mil-max-2row-text mil-mb30 mil-up">The Ultimate Guide to UI/UX Design for Beginners</h4>
                                                 <p class="mil-text-md mil-max-2row-text mil-mb40 mil-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.</p>
@@ -425,14 +426,14 @@
                                     <div class="mil-blog-card mil-type-2 mil-mb60">
                                         <div class="mil-cover mil-up">
                                             <div class="mil-hover-frame">
-                                                <img src="img/blog/14.jpg" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
+                                                <img src="{% static 'frontend/img/blog/14.jpg' %}" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
                                             </div>
                                             <div class="mil-badges">
                                                 <div class="mil-category">design</div>
                                                 <div class="mil-date">29.08.24</div>
                                             </div>
                                         </div>
-                                        <a href="publication-stl.html" class="mil-descr mil-c-gone">
+                                        <a href="../home/publication-stl.html" class="mil-descr mil-c-gone">
                                             <div class="mil-text-frame">
                                                 <h4 class="mil-head3 mil-max-2row-text mil-mb30 mil-up">From Concept to Creation: The Design Process Explained</h4>
                                                 <p class="mil-text-md mil-max-2row-text mil-mb40 mil-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.</p>
@@ -447,14 +448,14 @@
                                     <div class="mil-blog-card mil-type-2 mil-mb60">
                                         <div class="mil-cover mil-up">
                                             <div class="mil-hover-frame">
-                                                <img src="img/blog/12.jpg" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
+                                                <img src="{% static 'frontend/img/blog/12.jpg' %}" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
                                             </div>
                                             <div class="mil-badges">
                                                 <div class="mil-category">design</div>
                                                 <div class="mil-date">29.08.24</div>
                                             </div>
                                         </div>
-                                        <a href="publication-stl.html" class="mil-descr mil-c-gone">
+                                        <a href="../home/publication-stl.html" class="mil-descr mil-c-gone">
                                             <div class="mil-text-frame">
                                                 <h4 class="mil-head3 mil-max-2row-text mil-mb30 mil-up">How to Become a Graphic Designer in 10 Simple Steps</h4>
                                                 <p class="mil-text-md mil-max-2row-text mil-mb40 mil-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.</p>
@@ -469,14 +470,14 @@
                                     <div class="mil-blog-card mil-type-2 mil-mb60">
                                         <div class="mil-cover mil-up">
                                             <div class="mil-hover-frame">
-                                                <img src="img/blog/15.jpg" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
+                                                <img src="{% static 'frontend/img/blog/15.jpg' %}" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
                                             </div>
                                             <div class="mil-badges">
                                                 <div class="mil-category">design</div>
                                                 <div class="mil-date">29.08.24</div>
                                             </div>
                                         </div>
-                                        <a href="publication-stl.html" class="mil-descr mil-c-gone">
+                                        <a href="../home/publication-stl.html" class="mil-descr mil-c-gone">
                                             <div class="mil-text-frame">
                                                 <h4 class="mil-head3 mil-max-2row-text mil-mb30 mil-up">The Ultimate Guide to UI/UX Design for Beginners</h4>
                                                 <p class="mil-text-md mil-max-2row-text mil-mb40 mil-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.</p>
@@ -491,14 +492,14 @@
                                     <div class="mil-blog-card mil-type-2 mil-mb60">
                                         <div class="mil-cover mil-up">
                                             <div class="mil-hover-frame">
-                                                <img src="img/blog/16.jpg" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
+                                                <img src="{% static 'frontend/img/blog/16.jpg' %}" alt="cover" class="mil-scale-img" data-value-1="1.15" data-value-2="1">
                                             </div>
                                             <div class="mil-badges">
                                                 <div class="mil-category">design</div>
                                                 <div class="mil-date">29.08.24</div>
                                             </div>
                                         </div>
-                                        <a href="publication-stl.html" class="mil-descr mil-c-gone">
+                                        <a href="../home/publication-stl.html" class="mil-descr mil-c-gone">
                                             <div class="mil-text-frame">
                                                 <h4 class="mil-head3 mil-max-2row-text mil-mb30 mil-up">From Concept to Creation: The Design Process Explained</h4>
                                                 <p class="mil-text-md mil-max-2row-text mil-mb40 mil-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sequi commodi dignissimos optio, beatae, eos necessitatibus nisi. Nam cupiditate consectetur nostrum qui! Repellat natus nulla, nisi aliquid, asperiores impedit tempora sequi est reprehenderit cumque explicabo, dicta. Rem nihil ullam totam ea voluptas quibusdam repudiandae.</p>
@@ -519,11 +520,11 @@
                         <div class="container">
                             <div class="mil-blog-pagination">
                                 <ul>
-                                    <li><a href="#."><i class="far fa-arrow-left"></i></a></li>
-                                    <li class="mil-active"><a href="#.">1</a></li>
-                                    <li><a href="#.">2</a></li>
-                                    <li><a href="#.">...</a></li>
-                                    <li><a href="#."><i class="far fa-arrow-right"></i></a></li>
+                                    <li><a href="#"><i class="far fa-arrow-left"></i></a></li>
+                                    <li class="mil-active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">...</a></li>
+                                    <li><a href="#"><i class="far fa-arrow-right"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -543,7 +544,7 @@
                             </div>
                             <div class="mil-image-box">
                                 <div class="mil-image-frame">
-                                    <img src="img/home-4/2.jpg" alt="img" class="mil-scale-img" data-value-1="1.20" data-value-2="1">
+                                    <img src="{% static 'frontend/img/home-4/2.jpg' %}" alt="img" class="mil-scale-img" data-value-1="1.20" data-value-2="1">
                                     <div class="mil-overlay"></div>
                                 </div>
                             </div>
@@ -566,7 +567,7 @@
                         <div class="container">
                             <div class="row mil-no-g">
                                 <div class="col-lg-6 mil-up">
-                                    <a href="portfolio-1-stl.html" class="mil-footer-contact mil-mb90">
+                                    <a href="../home/portfolio-1-stl.html" class="mil-footer-contact mil-mb90">
                                         <h6 class="mil-footer-link mil-rubber mil-m1">Portfolio</h6>
                                         <span class="mil-stylized-btn mil-c-gone">
                                             <i class="fal fa-arrow-up"></i>
@@ -577,18 +578,18 @@
                                 <div class="col-lg-12">
                                     <div class="mil-footer-menu-frame mil-mb90 mil-up">
                                         <ul class="mil-footer-menu">
-                                            <li><a href="#." class="mil-c-gone">Home</a></li>
-                                            <li><a href="#." class="mil-c-gone">Services</a></li>
-                                            <li><a href="#." class="mil-c-gone">About</a></li>
-                                            <li><a href="#." class="mil-c-gone">Portfolio</a></li>
-                                            <li><a href="#." class="mil-c-gone">Contact</a></li>
+                                            <li><a href="#" class="mil-c-gone">Home</a></li>
+                                            <li><a href="#" class="mil-c-gone">Services</a></li>
+                                            <li><a href="#" class="mil-c-gone">About</a></li>
+                                            <li><a href="#" class="mil-c-gone">Portfolio</a></li>
+                                            <li><a href="#" class="mil-c-gone">Contact</a></li>
                                         </ul>
                                         <ul class="mil-social mil-c-gone">
-                                            <li><a href="#." target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
-                                            <li><a href="#." target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
-                                            <li><a href="#." target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
-                                            <li><a href="#." target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
-                                            <li><a href="#." target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
+                                            <li><a href="#" target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
+                                            <li><a href="#" target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
+                                            <li><a href="#" target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
+                                            <li><a href="#" target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
+                                            <li><a href="#" target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -615,22 +616,22 @@
     <!-- wrapper end -->
 
     <!-- swup js -->
-    <script src="js/plugins/swup.min.js"></script>
+    <script src="{% static 'frontend/js/plugins/swup.min.js' %}"></script>
     <!-- gsap js -->
-    <script src="js/plugins/gsap.min.js"></script>
+    <script src="{% static 'frontend/js/plugins/gsap.min.js' %}"></script>
     <!-- scroll smoother -->
-    <script src="js/plugins/ScrollSmoother.min.js"></script>
+    <script src="{% static 'frontend/js/plugins/ScrollSmoother.min.js' %}"></script>
     <!-- scroll trigger js -->
-    <script src="js/plugins/ScrollTrigger.min.js"></script>
+    <script src="{% static 'frontend/js/plugins/ScrollTrigger.min.js' %}"></script>
     <!-- scroll to js -->
-    <script src="js/plugins/ScrollTo.min.js"></script>
+    <script src="{% static 'frontend/js/plugins/ScrollTo.min.js' %}"></script>
     <!-- swiper js -->
-    <script src="js/plugins/swiper.min.js"></script>
+    <script src="{% static 'frontend/js/plugins/swiper.min.js' %}"></script>
     <!-- parallax js -->
-    <script src="js/plugins/parallax.js"></script>
+    <script src="{% static 'frontend/js/plugins/parallax.js' %}"></script>
 
     <!-- pixy js -->
-    <script src="js/main.js"></script>
+    <script src="{% static 'frontend/js/main.js' %}"></script>
 
 </body>
 
