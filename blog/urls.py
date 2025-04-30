@@ -1,8 +1,12 @@
+from xml.etree.ElementInclude import include
+
 from django.shortcuts import render
 from django.urls import path
-from blog.views import home, kategori_list
+from blog.views import kategori_list,home
 
 urlpatterns = [
     path('', home, name='home' ),
-    path('kategori_list', kategori_list, name='kategori_list'),
+    path('myweb/', include('myweb.urls')),
+    path('kategori/list', kategori_list, name='kategori_list'),
+
 ]

@@ -15,8 +15,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+
+from blog.views import kategori_list
 from myweb.views import home, contact, myblog
-from django.urls import path
+from django.urls import include, path
+
+
 
 from django.conf import settings
 from django.conf.urls.static import static
@@ -33,7 +37,8 @@ urlpatterns = [
     path('index.html', home, name='home'),
     path('contact-stl.html', contact, name='contact'),
     path('blog-stl.html', myblog, name='blog'),
-
+    path('kategori_list.html', kategori_list, name='kategori_list'),
+    path('crud/',include('crud.urls')),
 
 ]
 

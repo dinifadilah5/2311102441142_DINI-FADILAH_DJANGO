@@ -1,0 +1,188 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- grid css -->
+    <link rel="stylesheet" href="{% static 'frontend/css/plugins/bootstrap-grid.css'%}">
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="{% static 'frontend/css/plugins/fontawesome.min.css'%}">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="{% static 'frontend/css/plugins/swiper.min.css'%}">
+    <!-- okai css -->
+    <link rel="stylesheet" href="{% static 'frontend/css/style-stylish.css'%}">
+    <!-- page title -->
+    <title>Pixy</title>
+
+</head>
+
+<body>
+
+    <!-- wrapper -->
+    <div id="smooth-wrapper" class="mil-page-wrapper">
+
+        <!-- cursor -->
+        <div class="mil-cursor-follower"></div>
+        <!-- cursor end -->
+
+
+        <!-- scroll progress -->
+        <div class="mil-progress-track">
+            <div class="mil-progress"></div>
+        </div>
+        <!-- scroll progress end -->
+
+        {% include 'halaman/menu.html' %}
+
+        <!-- page transition -->
+        <div class="mil-transition-fade" id="swup">
+            <div class="mil-transition-frame">
+
+                <!-- content -->
+                <div id="smooth-content" class="mil-content">
+
+                    <!-- hero -->
+                    <div class="mil-hero-4 mil-up" id="top">
+                        <div id="scene" class="mil-hero-scene">
+                            <div class="mil-anim-frame" data-depth="0.25">
+                                <img src="{% static 'frontend/img/shapes/6.png'%}" alt="shapes" class="mil-hero-animation" data-depth="0.25">
+                            </div>
+                            <div class="mil-pad-frame" data-depth="0.35">
+                                <div class="mil-shape-pad"></div>
+                            </div>
+                        </div>
+                        <div class="mil-overlay"></div>
+                        <div class="container mil-hero-main mil-relative">
+                            <div class="mil-hero-text">
+                                <i class="fal fa-award mil-mb15"></i>
+                                <p class="mil-stylized mil-m2 mil-mb60">The most<br>titled Team</p>
+                                <h1 class="mil-display2 mil-rubber">Creative <br>design <br>Agency.</h1>
+                                <div class="mil-circle-text-frame">
+                                    <a href="#scroll" class="mil-circle-text mil-scroll-to mil-c-gone" data-no-swup>
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve" data-value="360" class="mil-rotate">
+                                            <defs>
+                                                <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
+                                            </defs>
+                                            <circle cx="150" cy="100" r="75" fill="none" />
+                                            <g>
+                                                <use xlink:href="#circlePath" fill="none" />
+                                                <text style="letter-spacing: 2px">
+                                                    <!-- circle text -->
+                                                    <textPath xlink:href="#circlePath">scroll down - scroll down - scroll down - </textPath>
+                                                </text>
+                                            </g>
+                                        </svg>
+                                        <span class="mil-arrow">
+                                            <i class="fal fa-arrow-down"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- hero end -->
+
+                    <!-- about -->
+                    <div class="mil-p-160-100" id="about">
+                        <div class="container">
+                            <div class="row mil-jcb">
+                                <div class="col-12">
+                                    <p class="mil-stylized mil-m2 mil-mb60 mil-up">About us</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <h2 class="mil-head1 mil-mb60 mil-up">Discover <br>Our <span class="mil-a2">agency</span></h2>
+                                    <p class="mil-text-sm mil-deco-text mil-mb60 mil-up">Welcome to <span class="mil-a2">PIXY</span> where your ideas come to life. We specialize in crafting unique brands, captivating advertising campaigns, and effective digital strategies.</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p class="mil-text-md mil-mb30 mil-up">Our team of talented designers, copywriters, and marketers works with passion and dedication to make your business stand out. We take the time to understand your vision and tailor our approach to ensure your message resonates with your target audience.</p>
+                                    <p class="mil-text-md mil-mb60 mil-up">Our goal is to help you build an emotional connection with your audience using cutting-edge tools and approaches. We combine our expertise with your unique insights, creating compelling narratives that not only engage but also inspire. Trust us with your idea, and we'll transform it into a successful project that will impress both you and your clients, driving growth and lasting impact.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- about end -->
+
+
+                    {%  block content %}
+                    {%  endblock content %}
+
+
+                    <!-- footer -->
+                    <footer class="mil-footer mil-p-160-160">
+                        <div class="container">
+                            <div class="row mil-no-g">
+                                <div class="col-lg-6 mil-up">
+                                    <a href="/contact-stl.html" class="mil-footer-contact mil-mb90">
+                                        <h6 class="mil-footer-link mil-rubber mil-m1">Let’s TALK</h6>
+                                        <span class="mil-stylized-btn mil-c-gone">
+                                            <i class="fal fa-arrow-up"></i>
+                                            <span>Read more</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="mil-footer-menu-frame mil-mb90 mil-up">
+                                        <ul class="mil-footer-menu">
+                                            <li><a href="#" class="mil-c-gone">Home</a></li>
+                                            <li><a href="#" class="mil-c-gone">Services</a></li>
+                                            <li><a href="#" class="mil-c-gone">About</a></li>
+                                            <li><a href="#" class="mil-c-gone">Portfolio</a></li>
+                                            <li><a href="#" class="mil-c-gone">Contact</a></li>
+                                        </ul>
+                                        <ul class="mil-social mil-c-gone">
+                                            <li><a href="#" target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
+                                            <li><a href="#" target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
+                                            <li><a href="#" target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
+                                            <li><a href="#" target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
+                                            <li><a href="#" target="_blank" data-no-swup><i class="far fa-circle"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="mil-footer-bottom mil-up">
+                                        <p class="mil-text-sm">©2024. All rights reserved.</p>
+                                        <p class="mil-text-sm">Design by: <a href="https://themeforest.net/user/millerdigitaldesign/portfolio" class="mil-text-link mil-a2 mil-c-gone">Nazar Miller</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </footer>
+                    <!-- footer end -->
+
+                </div>
+                <!-- content -->
+
+            </div>
+        </div>
+        <!-- page transition -->
+
+    </div>
+    <!-- wrapper end -->
+
+    <!-- swup js -->
+    <script src="{% static 'frontend/js/plugins/swup.min.js'%}"></script>
+    <!-- gsap js -->
+    <script src="{% static 'frontend/js/plugins/gsap.min.js'%}"></script>
+    <!-- scroll smoother -->
+    <script src="{% static 'frontend/js/plugins/ScrollSmoother.min.js'%}"></script>
+    <!-- scroll trigger js -->
+    <script src="{% static 'frontend/js/plugins/ScrollTrigger.min.js'%}"></script>
+    <!-- scroll to js -->
+    <script src="{% static 'frontend/js/plugins/ScrollTo.min.js'%}"></script>
+    <!-- swiper js -->
+    <script src="{% static 'frontend/js/plugins/swiper.min.js'%}"></script>
+    <!-- parallax js -->
+    <script src="{% static 'frontend/js/plugins/parallax.js'%}"></script>
+
+    <!-- pixy js -->
+    <script src="{% static 'frontend/js/main.js'%}"></script>
+
+</body>
+
+</html>
