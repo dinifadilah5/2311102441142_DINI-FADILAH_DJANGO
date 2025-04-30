@@ -7,5 +7,6 @@ class MahasiswaForm(forms.ModelForm):
         fields = [
             'nim',
             'nama',
+            'prodi'
 
         ]
