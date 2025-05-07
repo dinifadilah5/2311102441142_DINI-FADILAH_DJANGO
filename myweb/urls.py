@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 
 from blog.views import kategori_list
-from myweb.views import home, contact, myblog
+from myweb.views import home, blog, contact
 from django.urls import include, path
 
 
@@ -35,11 +35,11 @@ urlpatterns = [
     path('', home, name='home'),
     path('admin/', admin.site.urls),
     path('index.html', home, name='home'),
-    path('contact-stl.html', contact, name='contact'),
-    path('blog-stl.html', myblog, name='blog'),
+    # path('contact-stl.html', contact, name='contact'),
+    path('blog/', blog, name='blog'),
+    path('contact', contact, name='contact'),
     path('kategori_list.html', kategori_list, name='kategori_list'),
-    path('crud/',include('crud.urls')),
-
+    path('dashboard/', include('blog.urls')),
 ]
 
 ############### UNTUK MEDIA ##################

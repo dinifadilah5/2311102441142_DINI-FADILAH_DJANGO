@@ -5,12 +5,13 @@ def home(request):
     context = {}
     return render(request, template_name, context)
 
-def contact(request):
-    template_name = ('dashboard/contact-stl.html')
+def blog(request):
+    template_name = ('halaman/blog-stl.html')
     context = {}
     return render(request, template_name, context)
 
-def myblog(request):
-    template_name = ('dashboard/blog-stl.html')
+def contact(request):
+    template_name = ('halaman/contact-stl.html')
     context = {}
     return render(request, template_name, context)
+

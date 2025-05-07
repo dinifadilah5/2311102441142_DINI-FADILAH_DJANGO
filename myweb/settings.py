@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'user',
-    'crud'
 ]
 #setiap req masuk akan di eksekusi
 MIDDLEWARE = [
