@@ -4,7 +4,6 @@ from django.shortcuts import render
 from django.urls import path
 from blog.views import (
     kategori_list,
-    home,
     dashboard,
     kategori_add,
     kategori_update,

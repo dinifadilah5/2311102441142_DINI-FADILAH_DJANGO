@@ -19,6 +19,7 @@ from django.contrib import admin
 from blog.views import kategori_list
 from myweb.views import home, blog, contact
 from django.urls import include, path
+from myweb.auth import akun_login
 
 
 
@@ -40,6 +41,7 @@ urlpatterns = [
     path('contact', contact, name='contact'),
     path('kategori_list.html', kategori_list, name='kategori_list'),
     path('dashboard/', include('blog.urls')),
+    path('auth/login', akun_login, name='akun_login'),
 ]
 
 ############### UNTUK MEDIA ##################

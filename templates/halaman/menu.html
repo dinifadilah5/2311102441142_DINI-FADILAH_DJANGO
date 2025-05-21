@@ -14,12 +14,21 @@
                         <ul>
                             <li><a href="/blog/" class="mil-nav-link">Blog</a></li>  <!-- Ganti dengan path absolut -->
                             <li><a href="{% url 'kategori_list' %}" class="mil-nav-link">Kategori</a></li>
+                            <li>
+                                {% if user.is_authentication %}
+                                    <a href="{% url 'dashboard' %}" class="mil-nav-link">Dashboard</a>
+                                {% else %}
+                                    <a href="{% url 'akun_login' %}" class="mil-nav-link">Log In</a>
+                                {% endif %}
+                            </li>
+
+
                         </ul>
                     </div>
 
                     <div class="mil-buttons-tp-frame mil-c-gone">
                         <div class="mil-buttons">
-                            <a href="/dashboard" class="mil-tp-btn"><i class="fal fa-envelope"></i></a>
+                            <a href="#" class="mil-tp-btn"><i class="fal fa-envelope"></i></a>
 
                             <div class="mil-tp-btn">
                                 <div class="mil-menu-btn"><span></span></div>
@@ -33,53 +42,7 @@
                 <div class="mil-menu-window">
                     <div class="container">
                         <div class="row mil-no-g">
-                            <div class="col-lg-6">
-                                <div class="mil-left-side">
-                                    <div class="mil-menu-part mil-inner-scroll" id="swupMenu">
-                                        <ul class="mil-main-menu mil-c-gone">
-                                            <li class="mil-has-children">
-                                                <a href="#">Template style</a>
-                                                <ul>
-                                                    <li><a href="home-1.html" target="_blank" data-no-swup>Friendly</a></li>
-                                                    <li class="mil-current"><a href="home-4.html" target="_blank" data-no-swup>Stylish</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="mil-has-children">
-                                                <a href="#">Home type</a>
-                                                <ul>
-                                                    <li class="mil-current"><a href="home-4.html">Corporate</a></li>
-                                                    <li><a href="home-5.html">Agency</a></li>
-                                                    <li><a href="home-6.html">Personal</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="mil-has-children">
-                                                <a href="#">Portfolio</a>
-                                                <ul>
-                                                    <li><a href="portfolio-1-stl.html">Grid type 1</a></li>
-                                                    <li><a href="portfolio-2-stl.html">Grid type 2</a></li>
-                                                    <li><a href="portfolio-3-stl.html">Grid type 3</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="mil-has-children">
-                                                <a href="#">Pages</a>
-                                                <ul>
-                                                    <li><a href="team-stl.html">Team</a></li>
-                                                    <li><a href="/contact-stl.html">Contact</a></li>
-                                                    <li><a href="services-stl.html">Services</a></li>
-                                                    <li><a href="service-stl.html">Service single</a></li>
-                                                    <li><a href="/blog-stl.html">Blog</a></li>
-                                                    <li><a href="/snippets/kategori_list.html">Kategori</a></li>
-                                                    <li><a href="publication-stl.html">Publication</a></li>
-                                                    <li><a href="404-stl.html">404</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="mil-bottom-part">
-                                        <p class="mil-text-sm">©2024. All rights reserved.</p>
-                                    </div>
-                                </div>
-                            </div>
+
                             <div class="col-lg-6">
                                 <div class="mil-right-side">
                                     <div class="mil-links-part">

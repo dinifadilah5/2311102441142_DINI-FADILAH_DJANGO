@@ -4,10 +4,10 @@ from blog.models import Kategori, MyBlog
 from blog.forms import ArtikelForm
 
 # Create your views here.
-def home(request):
-    template_name = ('halaman/index.html')
-    context = {}
-    return render(request, template_name, context)
+# def home(request):
+#     template_name = ('halaman/index.html')
+#     context = {}
+#     return render(request, template_name, context)
 
 def contact(request):
     template_name = ('dashboard/contact-stl.html')
@@ -85,7 +85,7 @@ def artikel_list(request):
     return render(request, template_name, context)
 
 def artikel_add(request):
-    template_name = "dashboard/snippets/artikel_forms.html"
+    template_name = "dashboard/snippets/artikel_add.html"
     if request.method == "POST":
         form = ArtikelForm(request.POST, request.FILES)
         if form.is_valid():
@@ -106,7 +106,7 @@ def artikel_detail(request, id_artikel):
     template_name = "dashboard/snippets/artikel_detail.html"
     artikel = MyBlog.objects.get(id=id_artikel)
     context = {
-        'title': 'artikel.judul',
+        'title': artikel.judul,
         'artikel': artikel,
     }
     return render(request, template_name, context)
@@ -118,7 +118,7 @@ def artikel_update(request, id_artikel):
         forms = ArtikelForm(request.POST, request.FILES, instance=artikel)
         if forms.is_valid():
             pub = forms.save(commit=False)
-            pub.author = request.user
+            pub.user = request.user
             pub.save()
             return redirect(artikel_list)
     forms = ArtikelForm(instance=artikel)
